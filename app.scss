@@ -1,1 +1,12 @@
+@use "@material/theme" with ($primary: #9c27b0,
+    $secondary: #76ff03,
+    $background: #fff,
+);
+
+@use "@material/button";
+
+.accessible-button {
+    @include button.filled-accessible(blue);
+}
+
 @import 'material-components-web';
