@@ -5,55 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Elements</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <link rel="stylesheet" href="bundle.css">
-    <style>
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .element-card {
-            width: 20em;
-            margin: 16px;
-        }
-
-        .element-card>.mdc-card__media {
-            height: 9em;
-        }
-
-        #demo-absolute-fab {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            z-index: 1;
-        }
-
-        .mdc-fab {
-            background-color: #ff4081;
-            background-color: var(--mdc-theme-secondary, #ff4081);
-        }
-
-        .element-card.earth {
-            --mdc-theme-primary: #795548;
-            --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-dark);
-        }
-
-        .element-card.wind {
-            --mdc-theme-primary: #9e9e9e;
-            --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-light);
-        }
-
-        .element-card.fire {
-            --mdc-theme-primary: #f44336;
-            --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-dark);
-        }
-
-        .element-card.water {
-            --mdc-theme-primary: #00bcd4;
-            --mdc-theme-on-primary: var(--mdc-theme-text-primary-on-light);
-        }
-    </style>
+</head>
 
 <body>
     <div class="mdc-touch-target-wrapper">
@@ -63,6 +19,86 @@
             <span class="mdc-button__label">My Accessible Button</span>
         </button>
     </div>
+
+    <button class="mdc-button custom-text-button">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Text Button</span>
+    </button>
+
+    <button class="mdc-button mdc-button--icon-leading">
+        <span class="mdc-button__ripple"></span>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+        <span class="mdc-button__label">Text Button plus icon</span>
+    </button>
+
+    <button class="mdc-button mdc-button--outlined">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Outlined Button</span>
+    </button>
+
+    <button class="mdc-button mdc-button--outlined custom-outlined-button">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Outlined Button</span>
+    </button>
+
+    <button class="mdc-button mdc-button--outlined mdc-button--icon-leading">
+        <span class="mdc-button__ripple"></span>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+        <span class="mdc-button__label">Outlined Button plus Icon</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Contained Button Raised</span>
+    </button>
+
+    <button class="mdc-button mdc-button--unelevated">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Contained Button Unelevated</span>
+    </button>
+
+    <button class="mdc-button mdc-button--raised mdc-button--leading">
+        <span class="mdc-button__ripple"></span>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+        <span class="mdc-button__label">Contained Button plus Icon</span>
+    </button>
+
+    <button class="mdc-icon-button material-icons">
+        <div class="mdc-icon-button__ripple"></div>
+        favorite
+    </button>
+
+    <div class="mdc-touch-target-wrapper">
+        <button class="mdc-icon-button mdc-icon-button--touch material-icons">
+            <div class="mdc-icon-button__ripple"></div>
+            favorite
+            <div class="mdc-icon-button__touch"></div>
+        </button>
+    </div>
+
+    <button id="add-to-favorites" class="mdc-icon-button" aria-label="Add to favorites" aria-pressed="false">
+        <div class="mdc-icon-button__ripple"></div>
+        <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+        <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+    </button>
+
+    <button id="add-to-favorites" class="mdc-icon-button" aria-label="Add to favorites"
+        data-aria-label-on="Remove from favorites" data-aria-label-off="Add to favorites">
+        <div class="mdc-icon-button__ripple"></div>
+        <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+        <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+    </button>
+
+    <button class="mdc-button mdc-button--icon-trailing">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Button</span>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+    </button>
+
+    <button class="mdc-button" disabled>
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Button</span>
+    </button>
 
     <script src="bundle.js" async></script>
 </body>
