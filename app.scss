@@ -9,4 +9,6 @@
 .custom-text-button,
 .custom-outlined-button {
     @include button.ink-color(#84565E);
+    --mdc-theme-primary: #FEDBD0;
+    --mdc-outlined-button-outline-color: #FEDBD0;
 }
